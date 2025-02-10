@@ -1,7 +1,8 @@
+import { Response } from "express";
 import jwt from "jsonwebtoken";
 type TToken = {
   userId: string;
-  res: any;
+  res: Response;
 };
 
 const generateToken = ({ userId, res }: TToken) => {
